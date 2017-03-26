@@ -1,0 +1,64 @@
+// Decompiled by DJ v3.9.9.91 Copyright 2005 Atanas Neshkov  Date: 28.06.2007 13:52:24
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   MainForm.java
+
+package com.teckwave.Status;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+// Referenced classes of package com.teckwave.Status:
+//            MainForm
+
+private class MainForm$MainThread extends Thread
+{
+
+    public void run()
+    {
+        do
+            try
+            {
+                MainForm.access$000(MainForm.this);
+                sleep(60000L);
+            }
+            catch(Exception exception) { }
+        while(true);
+    }
+
+    final MainForm this$0;
+
+    private MainForm$MainThread()
+    {
+        this$0 = MainForm.this;
+        super();
+    }
+
+    MainForm$MainThread(MainForm$MainThread mainform$mainthread)
+    {
+        this();
+    }
+
+
+    // Unreferenced inner class com/teckwave/Status/MainForm$1
+
+/* anonymous class */
+    final class MainForm._cls1
+        implements ActionListener
+    {
+
+        public void actionPerformed(ActionEvent actionevent)
+        {
+            System.exit(0);
+        }
+
+        final MainForm this$0;
+
+            
+            {
+                this$0 = MainForm.this;
+                super();
+            }
+    }
+
+}
